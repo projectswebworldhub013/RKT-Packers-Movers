@@ -42,7 +42,7 @@ export default function HeroSection() {
         ))}
 
         {/* OVERLAY */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-black/20"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/40 to-black/20"></div>
       </div>
 
       {/* 🔹 CONTENT */}

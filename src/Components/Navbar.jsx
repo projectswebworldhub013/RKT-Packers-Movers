@@ -22,6 +22,7 @@ import {
   FaDolly,
   FaEnvelope,
   FaYoutube,
+  FaWarehouse,
 } from "react-icons/fa";
 import logo from "../assets/images/rkt-logo.png";
 
@@ -38,15 +39,59 @@ export default function Navbar() {
     { name: "Contact Us", path: "/contact", icon: <FaPhone /> },
   ];
 
-  const services = [
-    { name: "Packers & Movers", path: "/services/packers-movers", icon: <FaPeopleCarry /> },
-    { name: "Relocation Services", path: "/services/relocation", icon: <FaExchangeAlt /> },
-    { name: "Household Shifting", path: "/services/household-shifting", icon: <FaBoxOpen /> },
-    { name: "Car Transportation", path: "/services/car-transport", icon: <FaCarSide /> },
-    { name: "Bike Transportation", path: "/services/bike-transport", icon: <FaMotorcycle /> },
-    { name: "Pet Transportation", path: "/services/pet-transport", icon: <FaDog /> },
-    { name: "Loading & Unloading", path: "/services/loading-unloading", icon: <FaDolly /> },
-  ];
+ const services = [
+  {
+    name: "Packers & Movers Service",
+    path: "/services/packers-and-movers",
+    icon: <FaPeopleCarry />,
+  },
+  {
+    name: "Home Shifting Service",
+    path: "/services/home-shifting",
+    icon: <FaHome />,
+  },
+  {
+    name: "Office Relocation Service",
+    path: "/services/office-relocation",
+    icon: <FaExchangeAlt />,
+  }
+  ,
+  {
+    name: "Household Item Shifting",
+    path: "/services/household-shifting",
+    icon: <FaBoxOpen />,
+  },
+  {
+    name: "Intercity Relocation",
+    path: "/services/intercity-relocation",
+    icon: <FaTruckMoving />,
+  },
+  {
+    name: "Car Transport Service",
+    path: "/services/car-transport",
+    icon: <FaCarSide />,
+  },
+  {
+    name: "Bike Transport Service",
+    path: "/services/bike-transport",
+    icon: <FaMotorcycle />,
+  },
+  {
+    name: "Pet Relocation Service",
+    path: "/services/pet-relocation",
+    icon: <FaDog />,
+  },
+  {
+    name: "Loading & Unloading Service",
+    path: "/services/loading-unloading",
+    icon: <FaDolly />,
+  },
+  {
+    name: "Warehouse & Storage Service",
+    path: "/services/warehouse-storage",
+    icon: <FaWarehouse />,
+  },
+];
 
   useEffect(() => {
     let lastScrollY = window.scrollY;
