@@ -31,7 +31,7 @@ const CTASection = () => {
       <div className="relative max-w-4xl mx-auto text-center px-6">
 
         {/* Heading */}
-        <h2 className="text-3xl md:text-5xl font-semibold text-[#111111] leading-tight">
+        <h2 className="text-2xl md:text-4xl font-semibold text-[#111111] leading-tight">
           Move Smart. Move Safe.{" "}
           <span className="text-[#F4B400]">Move with RKT</span>
         </h2>

@@ -5,6 +5,7 @@ import WhyChooseRKT from '../Components/WhyChooseRKT'
 import RKTGallery from '../Components/RKTGallery'
 import Testimonials from '../Components/Testimonials'
 import StatsSection2 from '../Components/StatsSection2'
+import CTASection from '../Components/CTASection'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <RKTGallery />
       <Testimonials />
       <StatsSection2 />
+      <CTASection />
     </div>
   )
 }

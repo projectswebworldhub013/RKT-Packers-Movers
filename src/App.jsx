@@ -4,6 +4,7 @@ import Navbar from "./Components/Navbar"
 import FloatingButtons from './Components/FloatingButtons'
 import ScrollToTop from './Components/ScrollToTop'
 import Footer from "./Components/Footer"
+import AboutPage from "./Pages/AboutPage"
 function App() {
 
   return (
@@ -12,6 +13,7 @@ function App() {
     <Navbar/>
     <Routes>
       <Route path='/' element={<Home/>} />
+      <Route path='/about' element={<AboutPage/>} />
     </Routes>
     <Footer />
     <FloatingButtons/>
