@@ -5,9 +5,9 @@ import {
   FaUserShield,
   FaBullseye,
 } from "react-icons/fa";
-import aboutImg1 from "../assets/images/hero/h1.jpg";
-import aboutImg2 from "../assets/images/hero/h3.jpg";
-import aboutImg3 from "../assets/images/hero/hero4.jpg";
+import aboutImg1 from "../assets/images/rkt-3.png";
+import aboutImg2 from "../assets/images/hero/h1.jpg";
+import aboutImg3 from "../assets/images/hero/h3.jpg";
 import aboutImg4 from "../assets/images/img1.jpg";
 import { Link } from "react-router-dom";
 
