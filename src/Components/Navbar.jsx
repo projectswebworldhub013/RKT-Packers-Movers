@@ -4,11 +4,9 @@ import {
   FaHome,
   FaInfoCircle,
   FaServicestack,
-  FaPhone,
   FaBoxOpen,
   FaFacebookF,
   FaInstagram,
-  FaTwitter,
   FaLinkedinIn,
   FaBars,
   FaTimes,
@@ -24,8 +22,10 @@ import {
   FaYoutube,
   FaWarehouse,
   FaCertificate,
+  FaPhoneAlt,
 } from "react-icons/fa";
 import logo from "../assets/images/rkt-logo.png";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -37,7 +37,7 @@ export default function Navbar() {
     { name: "About Us", path: "/about", icon: <FaInfoCircle /> },
     { name: "Services", path: "/services", icon: <FaServicestack /> },
     { name: "Gallery", path: "/gallery", icon: <FaBoxOpen /> },
-    { name: "Contact Us", path: "/contact", icon: <FaPhone /> },
+    { name: "Contact Us", path: "/contact", icon: <FaPhoneAlt /> },
   ];
 
  const services = [
@@ -125,7 +125,7 @@ export default function Navbar() {
                 <FaEnvelope className="text-[#F4B400]" />
                 info@rktpackersmoverschennai.co.in
                 <span className="text-gray-400">|</span>
-                <FaPhone className="text-[#F4B400]" />
+                <FaPhoneAlt className="text-[#F4B400]" />
                 +91 96009 61026
                 <span className="text-gray-400">|</span>
                 <FaCertificate className="text-[#F4B400]" />
@@ -192,12 +192,52 @@ export default function Navbar() {
 
             {/* Social Icons */}
             <div className="flex gap-4 text-lg">
-              <FaYoutube className="text-red-600 hover:scale-110 transition" />
-              <FaFacebookF className="text-blue-600 hover:scale-110 transition" />
-              <FaInstagram className="text-pink-600 hover:scale-110 transition" />
-              <FaTwitter className="text-blue-400 hover:scale-110 transition" />
-              <FaLinkedinIn className="text-blue-700 hover:scale-110 transition" />
-            </div>
+  <a
+    href="https://www.youtube.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="YouTube"
+  >
+    <FaYoutube className="text-red-600 hover:scale-110 transition" />
+  </a>
+
+  <a
+    href="https://www.facebook.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Facebook"
+  >
+    <FaFacebookF className="text-blue-600 hover:scale-110 transition" />
+  </a>
+
+  <a
+    href="https://www.instagram.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Instagram"
+  >
+    <FaInstagram className="text-pink-600 hover:scale-110 transition" />
+  </a>
+
+  {/* Twitter X */}
+  <a
+    href="https://x.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="X (Twitter)"
+  >
+    <FaXTwitter className="text-black hover:scale-110 transition" />
+  </a>
+
+  <a
+    href="https://www.linkedin.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="LinkedIn"
+  >
+    <FaLinkedinIn className="text-blue-700 hover:scale-110 transition" />
+  </a>
+</div>
           </div>
 
           {/* Mobile Toggle */}
@@ -208,66 +248,122 @@ export default function Navbar() {
       </nav>
 
       {/* 🔷 Mobile Drawer */}
-      <div
-        className={`fixed top-0 left-0 h-full w-72 bg-white shadow-2xl z-50 transform ${
-          menuOpen ? "translate-x-0" : "-translate-x-full"
-        } transition-transform duration-300`}
-      >
-        <div className="flex justify-between items-center px-5 py-3 border-b">
-          <span className="font-bold text-lg">Menu</span>
-          <FaTimes onClick={() => setMenuOpen(false)} className="cursor-pointer" />
-        </div>
+      {/* 🔷 Mobile Drawer */}
+<div
+  className={`fixed top-0 left-0 h-full w-80 bg-white shadow-2xl z-50 transform ${
+    menuOpen ? "translate-x-0" : "-translate-x-full"
+  } transition-transform duration-300`}
+>
+  {/* Header */}
+  <div className="flex items-center justify-between px-5 py-4 border-b border-[#E5E7EB]">
+    <span className="text-lg font-semibold text-[#111111]">
+      RKT Packers & Movers
+    </span>
+    <FaTimes
+      onClick={() => setMenuOpen(false)}
+      className="cursor-pointer text-xl text-[#111111]"
+    />
+  </div>
 
-        <div className="px-5 py-4 overflow-y-auto">
-          <ul className="space-y-1">
-            {navLinks.map((link, idx) =>
-              link.name === "Services" ? (
-                <li key={idx}>
-                  <button
-                    onClick={() => setServicesOpen(!servicesOpen)}
-                    className="flex justify-between w-full py-3 font-medium"
-                  >
-                    <span className="flex items-center gap-2">
-                      {link.icon} {link.name}
-                    </span>
-                    <FaChevronDown
-                      className={`transition-transform ${
-                        servicesOpen ? "rotate-180" : ""
-                      }`}
-                    />
-                  </button>
+  {/* Menu Content */}
+  <div className="flex flex-col h-[calc(100vh-64px)]">
+  <div className="px-5 py-4 overflow-y-auto flex-1">
+    {/* Navigation */}
+    <ul className="space-y-1">
+      {navLinks.map((link, idx) =>
+        link.name === "Services" ? (
+          <li key={idx}>
+            <button
+              onClick={() => setServicesOpen(!servicesOpen)}
+              className="flex items-center justify-between w-full py-3 font-medium text-[#111111]"
+            >
+              <span className="flex items-center gap-3">
+                {link.icon}
+                {link.name}
+              </span>
+              <FaChevronDown
+                className={`transition-transform duration-300 ${
+                  servicesOpen ? "rotate-180" : ""
+                }`}
+              />
+            </button>
 
-                  {servicesOpen && (
-                    <ul className="pl-4 border-l space-y-1">
-                      {services.map((s, i) => (
-                        <li key={i}>
-                          <Link
-                            to={s.path}
-                            onClick={() => setMenuOpen(false)}
-                            className="block py-2 text-sm text-gray-600 hover:text-[#F4B400]"
-                          >
-                            {s.name}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </li>
-              ) : (
-                <li key={idx}>
-                  <Link
-                    to={link.path}
-                    onClick={() => setMenuOpen(false)}
-                    className="flex items-center gap-2 py-3 font-medium hover:text-[#F4B400]"
-                  >
-                    {link.icon} {link.name}
-                  </Link>
-                </li>
-              )
-            )}
-          </ul>
-        </div>
-      </div>
+            {/* Smooth Accordion */}
+            <div
+              className={`overflow-hidden transition-all duration-500 ${
+                servicesOpen ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"
+              }`}
+            >
+              <ul className="pl-4 border-l border-[#E5E7EB] space-y-1 mt-2">
+                {services.map((s, i) => (
+                  <li key={i}>
+                    <Link
+                      to={s.path}
+                      onClick={() => setMenuOpen(false)}
+                      className="flex items-center gap-2 py-2 text-sm text-[#6B7280] hover:text-[#F4B400]"
+                    >
+                      {s.icon}
+                      {s.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </li>
+        ) : (
+          <li key={idx}>
+            <Link
+              to={link.path}
+              onClick={() => setMenuOpen(false)}
+              className="flex items-center gap-3 py-3 font-medium text-[#111111] hover:text-[#F4B400]"
+            >
+              {link.icon}
+              {link.name}
+            </Link>
+          </li>
+        )
+      )}
+    </ul>
+
+    {/* Divider */}
+    <div className="my-6 h-px bg-[#E5E7EB]" />
+
+    {/* Business Info */}
+    <div className="space-y-2 text-sm text-[#6B7280]">
+      <p>
+        <span className="font-semibold text-[#111111]">UDYAM:</span>{" "}
+        UDYAM-TN-02-0449667
+      </p>
+      <p>
+        <span className="font-semibold text-[#111111]">GSTIN:</span>{" "}
+        33CGEPMN4948M2ZX
+      </p>
+    </div>
+
+    {/* Divider */}
+    <div className="my-6 h-px bg-[#E5E7EB]" />
+
+    {/* Social Icons */}
+    <div className="flex items-center justify-between px-2 text-xl">
+      <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
+        <FaFacebookF className="text-[#1877F2]" />
+      </a>
+      <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
+        <FaInstagram className="text-[#E1306C]" />
+      </a>
+      <a href="https://www.youtube.com" target="_blank" rel="noreferrer">
+        <FaYoutube className="text-[#FF0000]" />
+      </a>
+      <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
+        <FaLinkedinIn className="text-[#0A66C2]" />
+      </a>
+      <a href="https://www.x.com" target="_blank" rel="noreferrer">
+        <span className="font-bold text-black text-lg">X</span>
+      </a>
+    </div>
+  </div>
+  </div>
+</div>
 
       {/* 🔶 Marquee Animation */}
       <style>

@@ -9,8 +9,17 @@ import ServiceDetail from "./Pages/ServiceDetail"
 import GalleryPage from "./Pages/GalleryPage"
 import Contact from "./Pages/Contact"
 import CertificatePage from "./Pages/CertificatePage"
+import EnquiryForm from "./Components/EnquiryForm"
+import { useEffect, useState } from "react"
 function App() {
+const [showEnquiry, setShowEnquiry] = useState(false);
+ useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowEnquiry(true);
+    }, 4000);
 
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <>
     <ScrollToTop/>
@@ -24,6 +33,7 @@ function App() {
       <Route path='/certificates' element={<CertificatePage/>} />
     </Routes>
     <Footer />
+    <EnquiryForm isOpen={showEnquiry} onClose={() => setShowEnquiry(false)} />
     <FloatingButtons/>
     </>
   )

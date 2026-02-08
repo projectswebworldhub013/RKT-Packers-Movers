@@ -14,7 +14,6 @@ import {
   FaMotorcycle,
   FaDog,
   FaDolly,
-  FaTwitter,
   FaLinkedinIn,
   FaHome,
   FaWarehouse,
@@ -25,6 +24,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Translator from "./Translator";
 import VisitorCounter from "./VIsitorCounter";
+import { FaXTwitter } from "react-icons/fa6";
 
 /* ================= ANIMATION ================= */
 const containerVariants = {
@@ -193,12 +193,52 @@ export default function Footer() {
             <div className="w-32" />
           </div>
           {/* SOCIAL */}
-          <div className="mt-6 flex gap-4 text-lg text-[#111111]">
-            <a href="#" className="hover:text-[#F4B400] transition"><FaYoutube /></a>
-            <a href="#" className="hover:text-[#F4B400] transition"><FaFacebookF /></a>
-            <a href="#" className="hover:text-[#F4B400] transition"><FaInstagram /></a>
-            <a href="#" className="hover:text-[#F4B400] transition"><FaTwitter /></a>
-            <a href="#" className="hover:text-[#F4B400] transition"><FaLinkedinIn /></a>
+          <div className="mt-5 flex gap-4 text-lg">
+            <a
+              href="https://www.youtube.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+            >
+              <FaYoutube className="text-red-600 hover:scale-110 transition" />
+            </a>
+          
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
+              <FaFacebookF className="text-blue-600 hover:scale-110 transition" />
+            </a>
+          
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <FaInstagram className="text-pink-600 hover:scale-110 transition" />
+            </a>
+          
+            {/* Twitter X */}
+            <a
+              href="https://x.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="X (Twitter)"
+            >
+              <FaXTwitter className="text-black hover:scale-110 transition" />
+            </a>
+          
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <FaLinkedinIn className="text-blue-700 hover:scale-110 transition" />
+            </a>
           </div>
         </div>
       </div>

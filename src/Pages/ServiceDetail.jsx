@@ -12,6 +12,7 @@ import {
   FaMapMarkedAlt,
 } from "react-icons/fa";
 import OtherServicesSlider from "../Components/OtherServicesSlider";
+import CTASection from "../Components/CTASection";
 
 export default function ServiceDetail() {
   const { serviceSlug } = useParams();
@@ -205,6 +206,7 @@ export default function ServiceDetail() {
       </section>
 
       <OtherServicesSlider />
+      <CTASection/>
     </>
   );
 }
