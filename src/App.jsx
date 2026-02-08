@@ -8,6 +8,7 @@ import AboutPage from "./Pages/AboutPage"
 import ServiceDetail from "./Pages/ServiceDetail"
 import GalleryPage from "./Pages/GalleryPage"
 import Contact from "./Pages/Contact"
+import CertificatePage from "./Pages/CertificatePage"
 function App() {
 
   return (
@@ -20,6 +21,7 @@ function App() {
       <Route path="/services/:serviceSlug" element={<ServiceDetail />} /> 
       <Route path='/gallery' element={<GalleryPage/>} />
       <Route path='/contact' element={<Contact/>} />
+      <Route path='/certificates' element={<CertificatePage/>} />
     </Routes>
     <Footer />
     <FloatingButtons/>

@@ -61,6 +61,7 @@ export default function GalleryPage() {
       <section className="bg-[#FFFFFF] px-4 md:px-12 lg:px-20 py-16">
         {/* ================= HEADING ================= */}
         <motion.div
+          id="gallery"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}

@@ -134,8 +134,8 @@ export default function GalleryHero() {
             whileTap={{ scale: 0.95 }}
             className="w-full sm:w-auto flex justify-center"
           >
-            <Link
-              to="/services"
+            <a
+              href="#gallery"
               className="
                 inline-flex items-center justify-center
                 w-[220px] sm:w-auto
@@ -151,8 +151,8 @@ export default function GalleryHero() {
                 transition-all
               "
             >
-              Explore Services
-            </Link>
+              Explore Images
+            </a>
           </motion.div>
         </div>
       </motion.div>

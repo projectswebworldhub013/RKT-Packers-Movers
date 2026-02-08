@@ -173,10 +173,21 @@ export default function Footer() {
             Tamil Nadu – 600042, India
           </address>
 
-          <p className="mb-4 text-[#111111] font-medium">
-            <FaPhoneAlt className="inline mr-2 text-[#F4B400]" />
-            +91 96009 61026
-          </p>
+          <a
+  href="tel:+919600961026"
+  className="block mb-3 text-[#111111] font-medium hover:text-[#F4B400] transition"
+>
+  <FaPhoneAlt className="inline mr-2 text-[#F4B400]" />
+  +91 96009 61026
+</a>
+
+<a
+  href="tel:+919600961036"
+  className="block text-[#111111] font-medium hover:text-[#F4B400] transition"
+>
+  <FaPhoneAlt className="inline mr-2 text-[#F4B400]" />
+  +91 96009 61036
+</a>
 <div className="flex">
             <Translator />
             <div className="w-32" />

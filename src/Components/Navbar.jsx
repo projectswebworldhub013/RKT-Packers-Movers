@@ -23,6 +23,7 @@ import {
   FaEnvelope,
   FaYoutube,
   FaWarehouse,
+  FaCertificate,
 } from "react-icons/fa";
 import logo from "../assets/images/rkt-logo.png";
 
@@ -126,6 +127,12 @@ export default function Navbar() {
                 <span className="text-gray-400">|</span>
                 <FaPhone className="text-[#F4B400]" />
                 +91 96009 61026
+                <span className="text-gray-400">|</span>
+                <FaCertificate className="text-[#F4B400]" />
+                GSTIN : 33CGEPMN4948M2ZX
+                <span className="text-gray-400">|</span>
+                <FaCertificate className="text-[#F4B400]" />
+                UDYAM-TN-02-0449667
               </p>
             ))}
           </div>
