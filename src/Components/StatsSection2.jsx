@@ -1,6 +1,6 @@
 import React from "react";
 import mainImg from "../assets/images/img4.jpg"; // RKT moving / packing image
-import personImg2 from "../assets/images/owner.jpg"; // happy client image
+import personImg2 from "../assets/images/owner2.jpg"; // happy client image
 import {
   FaTruckMoving,
   FaBoxOpen,
@@ -67,7 +67,7 @@ const StatsSection2 = () => {
             professionally managed relocation and logistics service provider
             dedicated to delivering safe, reliable, and affordable moving
             solutions across India. Established in 2025 and led by{" "}
-            <strong>Mr. King King</strong>, who brings over{" "}
+            <strong>Durga Devi</strong>, who brings over{" "}
             <strong>20+ years of industry experience</strong>, we specialize in
             secure packing, systematic transportation, and stress-free
             relocation services tailored to individual and business needs.
@@ -132,7 +132,7 @@ const StatsSection2 = () => {
               />
               <div className="text-sm">
                 <p className="font-semibold text-[#111111]">
-                  Mr. King King
+                  Durga Devi
                 </p>
                 <p className="text-[#999] text-xs">
                   Chennai

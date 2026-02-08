@@ -3,7 +3,7 @@ import { FaPhoneAlt, FaArrowRight } from "react-icons/fa";
 
 // 🔹 IMPORT HERO IMAGES
 import hero1 from "../assets/images/hero/h1.avif";
-import hero2 from "../assets/images/hero/h1.jpg";
+import hero2 from "../assets/images/hero/h5.avif";
 import hero3 from "../assets/images/hero/h3.jpg";
 import hero4 from "../assets/images/hero/hero4.jpg";
 
@@ -140,7 +140,7 @@ export default function HeroSection() {
                   the same care and respect as our own.”
                 </p>
                 <p className="mt-3 text-white font-semibold text-sm">
-                  — Mr. King King, Founder
+                  — Durga Devi, Founder
                 </p>
               </div>
             </div>

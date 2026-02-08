@@ -70,7 +70,7 @@ const AboutSection = () => {
             <span className="font-semibold text-[#16A34A]">
               20+ years of leadership experience
             </span>{" "}
-            under the guidance of Mr. King King, we approach every move with
+            under the guidance of Durga Devi, we approach every move with
             responsibility, planning, and attention to detail.
           </p>
 

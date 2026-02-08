@@ -17,6 +17,7 @@ import img9 from "../assets/images/gallery/g9.jpg";
 import img10 from "../assets/images/gallery/g10.jpg";
 import img11 from "../assets/images/gallery/g11.jpg";
 import img12 from "../assets/images/gallery/g12.jpg";
+import CTASection from "../Components/CTASection";
 
 const images = [
   img1, img2, img3, img4, img5, img6,
@@ -212,6 +213,8 @@ export default function GalleryPage() {
           )}
         </AnimatePresence>
       </section>
+
+      <CTASection/>
     </>
   );
 }

@@ -85,7 +85,7 @@ export default function AboutHero() {
           Established in{" "}
           <span className="font-semibold text-white">2025</span> and led by{" "}
           <span className="font-semibold text-white">
-            Mr. King King
+            Durga Devi
           </span>
           , RKT Packers & Movers is a professionally managed relocation and
           logistics company based in Velachery, Chennai. With over{" "}
